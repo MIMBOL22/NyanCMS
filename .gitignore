@@ -8,5 +8,7 @@
 /httpRequests/
 phpMyAdmin
 .idea
+.gitignore
+auth.php
 
 
