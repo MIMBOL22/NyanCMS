@@ -1,0 +1,13 @@
+{
+    "database": {
+        "ip": "localhost",
+        "user": "root",
+        "password": "",
+        "dbname": "gimnaziya"
+    },
+    "system": {
+        "debug": true,
+        "offline": false,
+        "title": "Test"
+    }
+}
