@@ -20,7 +20,10 @@
         font-size: 8vw;
         text-shadow: 5px 5px black;
     }
-    
+    body::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+    }
     div.f h3 {
         color: #FFF;
         font-size: 3vw;
@@ -36,7 +39,9 @@
         align-items: center;
     }
 </style>
-
+<head>
+    <title><?php echo $config['system']['title'];?></title>
+</head>
 <body>
     <div class="img"></div>
     <div class="f">

@@ -3,9 +3,12 @@ $debug = [];
 function deb($k,$v){
     $GLOBALS['debug'][$k] = $v;
 }
-$config = json_decode(file_get_contents("config.json"),1);
+function json(string $src){
+    return json_decode(file_get_contents($src),1);
+}
+$config = json("config.json");
 if($config['system']['offline']){
-    include 'offline.html';
+    include 'offline.php';
     die();
 }
 deb("conf",$config);
@@ -16,4 +19,4 @@ $mysql = new mysqlo(
     $config['database']['password'],
     $config['database']['dbname']
 );
-deb("query",$mysql->table("SELECT * FROM pages",[]));
+?>

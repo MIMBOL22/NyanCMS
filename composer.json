@@ -1,0 +1,16 @@
+{
+  "name": "mimbol/nyancms",
+  "description": "DURKAEBAT",
+  "authors": [
+    {
+      "name": "mimbol",
+      "email": "mim.bol@mail.ru"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "/"
+    }
+  }
+}

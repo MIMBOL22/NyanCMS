@@ -1,0 +1,18 @@
+{
+  "bootstrap-css": {
+    "type": "css",
+    "link": "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css"
+  },
+  "bootstrap-js": {
+    "type": "js",
+    "link": "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js"
+  },
+  "jquery": {
+    "type": "js",
+    "link": "https://code.jquery.com/jquery-3.3.1.js"
+  },
+  "poper": {
+    "type": "js",
+    "link": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.js"
+  }
+}
