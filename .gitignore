@@ -1,15 +1,7 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Datasource local storage ignored files
-/../../../../../:\Server\data\htdocs\.idea/dataSources/
-/dataSources.local.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-phpMyAdmin
-.idea
-.gitignore
-auth.php
+/phpMyAdmin/
+/.idea/
+/.gitignore
+/auth.php
 
 
 
