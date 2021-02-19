@@ -13,4 +13,15 @@
               </li>
           </ul>
       </div>
+    <div class="my-2 my-lg-0">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#RegModal" href="#">Регистрация</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#AuthModal" href="#">Авторизация</a>
+            </li>
+        </ul>
+    </div>
   </nav>
+<?php include'modalki.php';?>

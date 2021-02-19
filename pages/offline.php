@@ -1,6 +1,7 @@
+<?php $a = rand(0,1);?>
 <style>
     div.img {
-        background: url(https://i.gifer.com/Mvd3.gif) no-repeat fixed;
+        background: url(<?php if($a) echo'https://i.gifer.com/Mvd3.gif'; else echo 'https://i.gifer.com/WbNM.gif';?>) no-repeat fixed;
         background-size: cover;
         background-position: center;
         position: absolute;
@@ -46,6 +47,6 @@
     <div class="img"></div>
     <div class="f">
         <h1>Сайт пока недоступен,</h1>
-        <h3>но админ уже бежит к решению проблемы</h3>
+        <h3>но админ уже <?php if($a) echo'бежит'; else echo 'едет';?> к решению проблемы</h3>
     </div>
 </body>
