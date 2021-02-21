@@ -1,0 +1,16 @@
+
+.mb-df{
+    display: flex;
+}
+.mb-df-ai-center{
+    align-items: center;
+}
+.modal{
+    display: none;
+}
+.show{
+    display: flex !important;
+}
+.modal-dialog{
+    width: -webkit-fill-available !important;
+}
