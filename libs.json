@@ -14,5 +14,13 @@
   "bootstrap-js": {
     "type": "js",
     "link": "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js"
+  },
+  "index-css": {
+    "type": "css",
+    "link": "/index.css"
+  },
+  "index-js": {
+    "type": "js",
+    "link": "/index.js"
   }
 }

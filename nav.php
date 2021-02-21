@@ -11,17 +11,17 @@
               <li class="nav-item">
                   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 2</a>
               </li>
-          </ul>
+          </ul><div class="navbar-text" style="padding: 0;">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="modal" data-target="#RegModal" href="#">Регистрация</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="modal" data-target="#AuthModal" href="#">Авторизация</a>
+                  </li>
+              </ul>
+          </div>
       </div>
-    <div class="my-2 my-lg-0">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#RegModal" href="#">Регистрация</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#AuthModal" href="#">Авторизация</a>
-            </li>
-        </ul>
-    </div>
+
   </nav>
 <?php include'modalki.php';?>
