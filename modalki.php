@@ -149,12 +149,12 @@
                     </div>
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
-                        <label class="form-check-label" for="exampleCheck1">Подтверждаю обработку моих персоональный и публикации её в сети "Интернет"</label>
+                        <label class="form-check-label" for="exampleCheck1">Подтверждаю обработку моих персоональных данных и публикации их в сети "Интернет"</label>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
                 </div>
             </form>
         </div>
