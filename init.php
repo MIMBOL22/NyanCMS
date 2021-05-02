@@ -21,10 +21,5 @@ if($config['system']['offline']){
 }
 deb("conf",$config);
 include 'mysql.php';
-$mysql = new mysqlo(
-    $config['database']['ip'],
-    $config['database']['user'],
-    $config['database']['password'],
-    $config['database']['dbname']
-);
+$mysql = new mysqlo($config['database']);
 ?>

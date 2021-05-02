@@ -1,7 +1,19 @@
 <?php
   class mysqlo{
     public $connection;
-    function __construct(string $ip,string $l,string $p,string $db){
+    function __construct($multi,string $l = "",string $p = "", string $db = ""){
+        if((!is_array($multi) &&($multi == "" || $l == "" || $db == "")) ||(is_array($multi) &&(($l != ""  || $db != "") || count($multi) != 4))){
+            $t = debug_backtrace()[0];
+            die("<br>Ошибка синтаксиса! Проверьте код в файле: " .$t["file"]." , на строке " .$t["line"]."<br>");
+        }
+        if(is_array($multi)){
+            $ip = $multi['ip'];
+            $l = $multi['user'];
+            $p = $multi['password'];
+            $db = $multi['dbname'];
+        }else {
+            $ip = $multi;
+        }
       try {
         $this->connect = new PDO("mysql:dbname=$db;host=$ip;charset=utf8;" , $l, $p);
       
