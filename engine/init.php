@@ -4,7 +4,7 @@ function deb($k,$v){
     $GLOBALS['debug'][$k] = $v;
 }
 function json(string $src){
-    return json_decode(file_get_contents("jsons/".$src),1);
+    return json_decode(file_get_contents("./jsons/".$src),1);
 }
 function locat($site,$time = 0){
     echo "<meta http-equiv='refresh' content='$time; url=$site'>";
