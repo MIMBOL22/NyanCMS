@@ -1,4 +1,4 @@
 <?php
-function controller($template){
+function index($template,$this){
 	return $template;
 }
