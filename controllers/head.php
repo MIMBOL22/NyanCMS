@@ -1,4 +1,4 @@
 <?php
-function head($template,$this){
+function head($template,$obj){
     return $template;
 }

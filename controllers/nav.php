@@ -1,5 +1,5 @@
 <?php
-function nav($template,$this){
+function nav($template,$obj){
 
     return $template;
 }

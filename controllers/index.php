@@ -1,4 +1,4 @@
 <?php
-function index($template,$this){
+function index($template,$obj){
 	return $template;
 }
