@@ -1,5 +1,5 @@
 <?php
-function nav($template,$obj){
+function nav(Object $obj,array $params = []){
 
-    return $template;
+    return $obj->template;
 }

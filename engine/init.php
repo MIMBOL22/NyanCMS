@@ -1,34 +1,21 @@
 <?php
-$debug = [];
-function deb($k,$v){
-    $GLOBALS['debug'][$k] = $v;
-}
-function json(string $src){
-    return json_decode(file_get_contents("./jsons/".$src),1);
-}
-function locat($site,$time = 0){
-    echo "<meta http-equiv='refresh' content='$time; url=$site'>";
-}
-function e404(){
-    echo "<meta http-equiv='refresh' content='0; url=/404'>";
-    die();
-}
+include 'functions.php';
+include 'mysql.php';
+include 'libs.php';
 $config = json("config.json");
-if($config['system']['offline']){
-    include 'pages/offline.php';
-    die();
-}
-$routers = json("routers.json");
+$routers = json("routers.json",1);
 $file = "public/".$_GET['page'];
+$mysql = new mysqlo((array) $config->database);
 if($routers[$_GET['page']] == "" && !file_exists($file)){
     e404();
 }else if(file_exists($file) && $_GET['page'] != ""){
-    header("Content-type: image/jpeg");
+    header("Content-type: ".mime_content_type($file));
     die(readfile($file));
 }
-include 'mysql.php';
-$mysql = new mysqlo($config['database']);
-include 'libs.php';
+if($config->system->offline){
+    $offline_temp = new template("offline");
+    die($offline_temp->template);
+}
 ?>
 <!doctype html>
 <html lang="en">

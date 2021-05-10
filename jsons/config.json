@@ -7,7 +7,7 @@
     },
     "system": {
         "debug": true,
-        "offline": false,
+        "offline": 0,
         "title": "Сайт"
     }
 }

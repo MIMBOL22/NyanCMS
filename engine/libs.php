@@ -1,6 +1,5 @@
 <?php
-$libs = json("libs.json");
-deb("libs",$libs);
+$libs = json("libs.json",1);
 $libs_html = "";
 foreach ($libs as $k => $v){
 	if($v['type'] == "js"){

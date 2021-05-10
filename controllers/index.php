@@ -1,4 +1,4 @@
 <?php
-function index($template,$obj){
-	return $template;
+function index(Object $obj,array $params = []){
+	return $obj->template;
 }
