@@ -28,6 +28,7 @@ if($routers[$_GET['page']] == "" && !file_exists($file)){
 }
 include 'mysql.php';
 $mysql = new mysqlo($config['database']);
+include 'libs.php';
 ?>
 <!doctype html>
 <html lang="en">

@@ -9,10 +9,10 @@ class template{
 
     public function reparr(array $array){
         foreach ($array as $k => $v){
-            $this->template = str_replace($k, $v, $this->template);
+            $this->template = str_replace("%".$k."%", $v, $this->template);
         }
     }
     public function rep(string $search,string $replace){
-            $this->template = str_replace($search, $replace, $this->template);
+            $this->template = str_replace("%".$search."%", $replace, $this->template);
     }
 }
