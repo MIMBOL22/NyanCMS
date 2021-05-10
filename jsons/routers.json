@@ -1,4 +1,6 @@
 {
   "":"index",
-  "offline": "offline"
+  "offline": "offline",
+  "404": "e404",
+  "403": "e403"
 }
