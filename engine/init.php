@@ -1,13 +1,13 @@
 <?php
+include 'json.php';
 include 'functions.php';
 include 'mysql.php';
 include 'libs.php';
-$config = json("config.json");
-$routers = json("routers.json",1);
 $file = "public/".$_GET['page'];
 $mysql = new mysqlo((array) $config->database);
-if($routers[$_GET['page']] == "" && !file_exists($file)){
-    e404();
+if($routersarr[$_GET['page']] == "" && !file_exists($file)){
+    locat("/404");
+    die();
 }else if(file_exists($file) && $_GET['page'] != ""){
     header("Content-type: ".mime_content_type($file));
     die(readfile($file));

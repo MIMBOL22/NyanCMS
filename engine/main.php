@@ -1,6 +1,12 @@
 <?php
-//deb('routs',$routers); TODO
-//deb("get",$_GET); TODO
-//deb("conf",$config); TODO
-$index = new template($routers[$_GET['page']]);
-echo $index->template;
+$temps = [];
+$temps['head'] = new template("head",['title'=> $config->system->title,"libs"=>$libs_html]);
+$temps['nav'] = new template("nav");
+$temps['index'] = new template($routersarr[$_GET['page']]);
+if(array_search($_GET['page'],$rout_die) !== false) {
+    die($temps['index']->template);
+}else {
+    foreach ($temps as $k => $v) {
+        echo $v->template;
+    }
+}

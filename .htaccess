@@ -1,14 +1,24 @@
+php_value error_reportin 1
+# отключение отображения ошибок запуска
+php_flag display_startup_errors off
+
+# отключить отображение всех других ошибок
+php_flag display_errors off
+
+# отключить ошибки html разметки
+php_flag html_errors off
 Options All -Indexes
 ErrorDocument 404 /404/
 ErrorDocument 403 /403/
 <IfModule mod_rewrite.c>
-RewriteEngine on
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*) index.php?page=$1 [L,QSA]
+    RewriteEngine on
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*) index.php?page=$1 [L,QSA]
 </IfModule>
 <FilesMatch ".(htaccess|json|nyan)$">
- Order Allow,Deny
- Deny from all
- </FilesMatch>
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+

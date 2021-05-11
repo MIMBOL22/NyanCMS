@@ -1,7 +1,6 @@
 <?php
-$libs = json("libs.json",1);
 $libs_html = "";
-foreach ($libs as $k => $v){
+foreach ($libsarr as $k => $v){
 	if($v['type'] == "js"){
         $libs_html .= "<script src='".$v['link']."'></script>";
 	}else if ($v['type'] == "css"){
